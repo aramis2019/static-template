@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  background-color: rgb(232, 232, 232);
+  line-height: 24px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  padding: 260px 0px;
+  flex-flow: row;
+}
+
+.card {
+  width: 480px;
+  height: 480px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+  overflow: hidden;
+}
+
+.card-header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #000000;
+}
+
+.card-img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.card:hover .card-img {
+  opacity: 0.5;
+}
+
+.leftbackground {
+  background: #000000 url("img/Background.jpg");
+}
+
+.rightbackground {
+  background-image: url("img/Background 2.jpg");
+}
+
+.badge {
+  padding: 8px 16px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+
+  background-color: rgba(211, 47, 47, 0.87);
+  border-radius: 4px;
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+}
+
+.card-title {
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Roboto;
+  font-size: 24px;
+  margin: 0 0 16px;
+}
+
+.card-body {
+  padding: 24px;
+  display: block;
+}
+
+.card-text {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+}
+.card-text + .card-text {
+  margin-top: 12px;
+}
+
+.card:not(:hover) .card-text {
+  display: none;
+}
+
+.btn-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+
+  border-radius: 20px;
+  height: 40px;
+  min-width: 40px;
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Roboto;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.btn-close:hover {
+  padding: 0px 16px;
+  opacity: 1;
+}
+
+.card:not(:hover) .btn-close {
+  display: none;
+}
+
+.btn-close-text {
+  text-transform: uppercase;
+  margin-left: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.btn-close:not(:hover) .btn-close-text {
+  display: none;
+}
